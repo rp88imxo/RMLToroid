@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee37ccc26dadcb9459f59dfece2e1d33, type: 3}
+  m_Name: Asteroid Pool
+  m_EditorClassIdentifier: 
+  asteroidPrefabsBig:
+  - {fileID: 8951051677431093548, guid: c3de618772fb09c4f8fcc901836ae086, type: 3}
+  - {fileID: 6248980720525672851, guid: 9ab65506ff1ac014ab7fde68b1c35ae1, type: 3}
+  - {fileID: 6616807891438144510, guid: 4e992e8cf7a98c74ba5cdd81df7fafc8, type: 3}
+  asteroidPrefabsSmall:
+  - {fileID: 7160628252779792447, guid: 84c799a280170a34d94edc22b42b020a, type: 3}
+  - {fileID: 3824565056767987585, guid: ffcf63375b47ce0479aaed65d539ab81, type: 3}
+  - {fileID: 3278066687445576575, guid: 27ff145932dce914b9798a5750550b1b, type: 3}
+  recycle: 1
