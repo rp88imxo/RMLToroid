@@ -97,19 +97,10 @@ namespace RML
             if (isSubscribe)
             {
                 EventBusMessager.Instance.AddListener(GameConsts.PlayerShipSpawned, OnPlayerShipSpawned);
-
-                //EventBusMessager.Instance.AddListener(GameConsts.UfoDestroyed, OnUfoDestroyed);
-                //EventBusMessager.Instance.AddListener(GameConsts.GameEnd, OnGameEnd);
-                //EventBusMessager.Instance.AddListener(GameConsts.Restart, OnGameRestart);
-                //EventBusMessager.Instance.AddListener(GameConsts.PlayerShipSpawned, OnPlayerShipSpawned);
             }
             else
             {
                 EventBusMessager.Instance.RemoveListener(GameConsts.PlayerShipSpawned, OnPlayerShipSpawned);
-                //EventBusMessager.Instance.RemoveListener(GameConsts.UfoDestroyed, OnUfoDestroyed);
-                //EventBusMessager.Instance.RemoveListener(GameConsts.GameEnd, OnGameEnd);
-                //EventBusMessager.Instance.RemoveListener(GameConsts.Restart, OnGameRestart);
-                //EventBusMessager.Instance.RemoveListener(GameConsts.PlayerShipSpawned, OnPlayerShipSpawned);
             }
         }
 
@@ -123,10 +114,6 @@ namespace RML
         #region UNITY_METHODS
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                EventBusMessager.Instance.PublishEvent(new RestartPayload(GameConsts.Restart));
-            }
             borderPacker.UpdateState();  
         }
         #endregion
